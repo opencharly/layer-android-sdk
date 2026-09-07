@@ -122,7 +122,7 @@ android-sdk:
                 exists: true
             - check: build-tools 36 provides aapt2 (Appium's ADB badging probe needs it)
               file:
-                file: /opt/android-sdk/build-tools/36/aapt2
+                file: /opt/android-sdk/build-tools/36.0.0/aapt2
                 exists: true
             - check: the emulator binary is installed
               file:
