@@ -1,7 +1,5 @@
-version: 2026.232.0520
 android-sdk:
     candy:
-        version: 2026.145.1302
         description: |
             Android SDK toolchain (sdkmanager/adb/aapt2/emulator + API-36 system image) under /opt/android-sdk
             Installs the Android SDK from CachyOS/AUR packages under
