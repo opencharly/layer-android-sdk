@@ -10,7 +10,6 @@ Canonical files:
 
 - `charly.yml` — the `android-sdk:` candy entity (and the `android-sdk-skill:`
   skill entity, when present).
-- `.github/workflows/` — the org-wide `charly/pr-validator` gate; there is no per-repo candy gate.
 - `.github/workflows/tag-on-merge.yml` — CalVer tag + `CHANGELOG/` on merge.
 - `README.md` — user overview only; never agent guidance.
 
@@ -33,8 +32,9 @@ candy carries no `skill:` entity. When one is authored, add it here.
 
 - `charly box validate` at the repo root — the structural check: the manifest
   must parse and validate at the installed charly.
-- The merge gate is the org-wide `charly/pr-validator` (required check
-  `validate / validate`); there is no per-repo candy gate.
+- The merge gate is the **org-wide** `charly/pr-validator` (required check
+  `validate / validate`, defined in `opencharly/.github`); this repo has no
+  per-repo candy gate.
 - There is no live bed in this repo: the candy's `plan:` `check:` steps assert
   the installed paths (`sdkmanager`, `adb`, `aapt2`, the emulator, the `android-36`
   platform, the system image) and run `adb version`; the emulator bring-up is
