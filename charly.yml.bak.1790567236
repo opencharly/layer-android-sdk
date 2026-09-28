@@ -1,5 +1,7 @@
+version: 2026.232.0520
 android-sdk:
     candy:
+        version: 2026.145.1302
         description: |
             Android SDK toolchain (sdkmanager/adb/aapt2/emulator + API-36 system image) under /opt/android-sdk
             Installs the Android SDK from CachyOS/AUR packages under
@@ -14,7 +16,7 @@ android-sdk:
             under /opt/android-sdk, so the SDK is verifiable by probing those
             paths and running adb.
         require:
-            - '@github.com/opencharly/layer-java-openjdk:v2026.239.1627'
+            - '@github.com/opencharly/layer-java-openjdk:v2026.237.457'
         env:
             ANDROID_HOME: "/opt/android-sdk"
             ANDROID_SDK_ROOT: "/opt/android-sdk"
