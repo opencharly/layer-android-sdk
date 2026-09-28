@@ -53,8 +53,6 @@ avdmanager list avd
   `apkeep` download, the `sdkmanager` system-image `run:` step, an ordered
   `plan:` of build-time `check:` steps, and the embedded `skill:` entity (when
   present).
-- `.github/workflows/deploy.yml` — builds the pinned charly and runs
-  `charly box validate` on the manifest (the merge gate).
 - `.github/workflows/tag-on-merge.yml` — CalVer tag + `CHANGELOG/` on merge.
 - `README.md` — this user overview.
 
