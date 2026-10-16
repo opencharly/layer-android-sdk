@@ -25,8 +25,12 @@ Canonical files:
   `plan:` step verbs incl. `check:`/`run:`/`download:`, package sections, AUR).
   Load before editing any entity field or plan step.
 
-There is no dedicated `/charly-*:android-sdk` owning skill yet — this repo's
-candy carries no `skill:` entity. When one is authored, add it here.
+The `android-sdk-skill` entity is defined in the root `charly.yml`. Its generated
+projection lives in the separate `opencharly/marketplace` repo at
+`check/skills/android-sdk/SKILL.md` (the umbrella's `marketplace` gitlink). After
+this producer source lands and is tagged, regenerate the projection from the
+umbrella with `charly marketplace generate`, then land the marketplace consumer
+update before docs pins the new corpus.
 
 ## Build / validate / test
 
