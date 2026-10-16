@@ -26,8 +26,11 @@ Canonical files:
   Load before editing any entity field or plan step.
 
 The `android-sdk-skill` entity is defined in the root `charly.yml`. Its generated
-projection is `marketplace/check/skills/android-sdk/SKILL.md`; regenerate that
-projection with `charly marketplace generate` whenever the source skill changes.
+projection lives in the separate `opencharly/marketplace` repo at
+`check/skills/android-sdk/SKILL.md` (the umbrella's `marketplace` gitlink). After
+this producer source lands and is tagged, regenerate the projection from the
+umbrella with `charly marketplace generate`, then land the marketplace consumer
+update before docs pins the new corpus.
 
 ## Build / validate / test
 
